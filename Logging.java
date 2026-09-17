@@ -57,7 +57,7 @@ public final class Logging {
         + "how many logs can fit in a truck");
         // tell user the truck capacity and log weight
         System.out.println("The truck capacity is 1100 kg"
-        + "and each log weighs 20 kg.");
+        + " and each log weighs 20 kg.");
 
 
         System.out.print("Enter the size of the log (0.25 m, 0.5 m, 1 m): ");
@@ -89,20 +89,20 @@ public final class Logging {
 
                 // Calculate the log weight
 
-                final double userLogWeight = (4.0 * LOG_WEIGHT);
+                final double userLogWeight = (radDouble * LOG_WEIGHT);
                 final double logsInTruck = (TRUCK_CAPACITY / userLogWeight);
 
                 // Display the amount of logs that can fit in the truck,
                 // rounded to 2 decimal places
 
-                System.out.print("The amount of logs"
-                + "that can fit in the truck, ");
+                System.out.print("The amount of " + radstring
+                + "m logs that can fit in the truck ");
 
-                System.out.print(radstring + " is ");
+                System.out.print("is ");
 
                 System.out.format("%.2f", logsInTruck);
 
-                System.out.println("logs.");
+                System.out.println(" logs.");
 
             }
 
